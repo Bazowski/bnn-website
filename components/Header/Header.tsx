@@ -15,9 +15,9 @@ import { Asterisk, Lock, Search } from "lucide-react";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 
 const navList: { key: number; title: string; href: string }[] = [
-  { key: 456, title: "Home", href: "/" },
-  { key: 457, title: "About", href: "/about" },
-  { key: 458, title: "Contact", href: "/contact" },
+  { key: 456, title: "Эхлэл", href: "/" },
+  { key: 457, title: "Бидний тухай", href: "/about" },
+  { key: 458, title: "Холбогдох", href: "/contact" },
 ];
 
 export function Header() {
@@ -27,7 +27,7 @@ export function Header() {
         <Link href="/" className="flex items-center">
           <Asterisk />
           <span className="self-center text-2xl font-semibold whitespace-nowrap">
-            Minimalist
+            БНН
           </span>
         </Link>
 
@@ -54,7 +54,7 @@ export function Header() {
           </Button>
           <Button variant="link">
             {" "}
-            <Lock /> Login{" "}
+            <Lock /> Нэвтрэх{" "}
           </Button>
           <ThemeToggle />
         </div>

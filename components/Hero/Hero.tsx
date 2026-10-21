@@ -19,9 +19,9 @@ export function Hero() {
       <CardHeader className="relative w-full h-[424px]">
         <Image
           className="mx-auto object-cover object-center"
-          src={post.image}
+          src={post?.image || "/turiin-ordon.jpg"}
           fill={true}
-          alt={post.title}
+          alt={post?.title || "Төрийн ордон"}
         />
       </CardHeader>
       <CardContent className="flex flex-col py-4 px-4 items-start justify-start">
@@ -34,15 +34,15 @@ export function Hero() {
           ""
         )}
         <CardTitle className="mb-8 text-4xl text-white font-semibold leading-12 md:text-4xl">
-          {post.title}{" "}
-        </CardTitle>
-        <CardDescription className="mb-8 text-lg text-white leading-8">
-          {post.description}{" "}
-        </CardDescription>
-        <Link
-          href={`/read/${post.slug}`}
-          className="hover:underline text-white flex flex-row items-center underline-offset-8 rounded-none"
-        >
+ 		 {post?.title || "БҮГД НАЙРАМДАХ НАМЫН дүрэм, журам, үнэт зүйлс"}
+	</CardTitle>
+	<CardDescription className="mb-8 text-lg text-white leading-8">
+ 		 {post?.description || "«Эзэн хааны алтан гэрээс нь зовж байгуулсан төрийг минь, зонхилон үүдсэн үйлийг минь, амь лугаа адил сахихтун, ам тангарагаа ашид батлагтун.» Эзэн ЧИНГИС Хааны сургаалиас"}
+	</CardDescription>
+	<Link
+ 		 href={`/read/${post?.slug || ""}`}
+ 		 className="hover:underline text-white flex flex-row items-center underline-offset-8 rounded-none"
+	>
           Read Now <ArrowRight className="ml-2 size-4" />{" "}
         </Link>
       </CardContent>

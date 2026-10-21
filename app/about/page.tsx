@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { EmailButton } from "./EmailButton";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About us",
   description: "About us - Built Minimalist website.",
 };
 
